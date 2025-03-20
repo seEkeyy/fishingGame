@@ -3,5 +3,11 @@
  */
 public class Fish extends LakeObject
 {
-
+    @Override
+    public int getCost()
+      {
+        return super.getCost()*super.getWeight();
+      }
+      
 }
+
